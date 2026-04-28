@@ -23,7 +23,25 @@ export const PROJECTS: Project[] = [
     id:          "project-three",
     title:       "Project Three",
     description: "A lightweight SaaS tool for managing and automating repetitive business operations.",
-    tags:        ["React", "Node.js", "Tailwind"],
+    tags:        ["Next.js", "TypeScript", "Tailwind"],
+    href:        "#",
+    repoHref:    "#",
+    featured:    false,
+  },
+  {
+    id:          "project-four",
+    title:       "Project Four",
+    description: "An AI-powered content pipeline that processes and summarizes documents at scale.",
+    tags:        ["Python", "OpenAI", "FastAPI"],
+    href:        "#",
+    repoHref:    "#",
+    featured:    false,
+  },
+  {
+    id:          "project-five",
+    title:       "Project Five",
+    description: "A real-time dashboard for monitoring business metrics with live data updates.",
+    tags:        ["Next.js", "TypeScript", "PostgreSQL"],
     href:        "#",
     repoHref:    "#",
     featured:    false,
@@ -31,3 +49,7 @@ export const PROJECTS: Project[] = [
 ];
 
 export const FEATURED_PROJECTS = PROJECTS.filter((p) => p.featured);
+
+export const ALL_TAGS = Array.from(
+  new Set(PROJECTS.flatMap((p) => p.tags))
+).sort();
