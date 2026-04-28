@@ -2,19 +2,19 @@ import type { Skill } from "@/types";
 
 export const SKILLS: Skill[] = [
   {
-    category: "Frontend",
-    items:    ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    category: "Mobile",
+    items:    ["Flutter", "Dart", "Android Studio", "Java", "Clean Architecture"],
   },
   {
-    category: "Backend",
-    items:    ["Node.js", "Python", "FastAPI", "PostgreSQL", "REST APIs"],
+    category: "Web",
+    items:    ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML / CSS / JS"],
   },
   {
-    category: "AI & Automation",
-    items:    ["OpenAI API", "LangChain", "Prompt Engineering", "Web Scraping"],
+    category: "Backend & Data",
+    items:    ["Supabase", "Firebase", "MySQL", "PostgreSQL", "PHP"],
   },
   {
-    category: "Tools & Infra",
-    items:    ["Git", "Docker", "Vercel", "GitHub Actions", "Linux"],
+    category: "Tools",
+    items:    ["Git", "GitHub", "Vercel", "Figma", "Android Studio"],
   },
 ];

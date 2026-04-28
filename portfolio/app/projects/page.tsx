@@ -3,7 +3,7 @@ import ProjectFilter from "@/components/ui/ProjectFilter";
 import ProjectGrid   from "@/components/ui/ProjectGrid";
 
 export const metadata = {
-  title:       "Projects — Your Name",
+  title:       "Projects — John Remy C. Gonzales",
   description: "A collection of projects built across full stack development, automation, and AI.",
 };
 
