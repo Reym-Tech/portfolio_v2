@@ -3,12 +3,22 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/data/navigation";
+import { useScrolled } from "@/hooks/useScrolled";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const scrolled  = useScrolled();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header
+      className={`
+        fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        ${scrolled
+          ? "bg-[var(--bg-base)]/80 backdrop-blur-md border-b border-[var(--border)]"
+          : "bg-transparent"
+        }
+      `}
+    >
       <nav
         className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4"
         aria-label="Main navigation"
